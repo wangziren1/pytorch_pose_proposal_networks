@@ -7,11 +7,11 @@ We train the network on MPII human pose dataset but don't evaluate the performan
 2. opencv
 3. numpy
 4. tensorboardX
-## demo
+## Demo
 [demo1](https://youtu.be/l_zgAg_loFk)
 [demo2](https://youtu.be/FLmLAwOvqOA)
 [demo3](https://youtu.be/IU2r3-T3LGs)
-## speed
+## Speed
 The speed depend on numbers of person. More persons there are, a little slower it runs.
 
  example       |resnet18                   |  resnet50
@@ -19,7 +19,7 @@ The speed depend on numbers of person. More persons there are, a little slower i
 A | <img src="https://github.com/wangziren1/pytorch_pose_proposal_network/blob/master/images/res18-1.png" width="200">  |  <img src="https://github.com/wangziren1/pytorch_pose_proposal_network/blob/master/images/res50-1.png" width="200"> |
 B | <img src="https://github.com/wangziren1/pytorch_pose_proposal_network/blob/master/images/res18-3.png" width="200"> | <img src="https://github.com/wangziren1/pytorch_pose_proposal_network/blob/master/images/res50-3.png" width="200"> |
 
-## problems
+## Problems
 <p align="center">
 <img src="https://github.com/wangziren1/pytorch_pose_proposal_network/blob/master/images/loss_iou.png" width="600">
 </p>
@@ -28,9 +28,9 @@ The above figure is iou loss. you can see it that decrease not very better than 
 
 Another problem is that I can't figure out one formula: S * E * D in the paper. I just use D * E * D. 
 
-## train
+## Train
 First you need to put MPII dataset images in **data/images**. Then You can train from scratch or download our well trained weights.
-* train from scratch: download pretrained weights [resnet18 weights](https://download.pytorch.org/models/resnet18-5c106cde.pth) and [resnet50 weights](https://download.pytorch.org/models/resnet50-19c8e357.pth), then put them in **src/model/pretrain_weight** directory.
+* train from scratch: download pretrained weights [resnet18 weights](https://download.pytorch.org/models/resnet18-5c106cde.pth) and [resnet50 weights](https://download.pytorch.org/models/resnet50-19c8e357.pth), and put them in **src/model/pretrain_weight** directory.
 * well trained weights: download [resnet18 weights](https://drive.google.com/open?id=1NUTmRxsWuEqB7uAkBK2JEP1ZdZE3FXsn) and
 [resnet50 weights](https://drive.google.com/open?id=1IHBv8SCUrO0OJiaxMwrp8Ok1nKxVyzjG)
 and put them in **src/checkpoint** directory.
